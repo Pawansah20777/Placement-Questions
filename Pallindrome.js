@@ -25,3 +25,10 @@ console.log(isPalindrome(123));
 
 // Step 5: Compare
 // "121" === "121"  ➔ true
+
+
+// Explanation:
+// 1.number.toString() converts the number 121 to the string "121".
+// 2.str.split('') splits the string "121" into an array of characters: ['1', '2', '1'].
+// 3..reverse() reverses the array: ['1', '2', '1'].
+// 4..join('') joins the reversed array back into a string: "121".
