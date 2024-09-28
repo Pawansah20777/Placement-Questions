@@ -30,9 +30,9 @@
 // const result = data.split('-');  // Split by hyphen
 // console.log(result);  
 
-// const text = 'hello';
-// const result = text.split('');  // Split every character
-// console.log(result); 
+const text = 'hello';
+const result = text.split('');  // Split every character
+console.log(result); 
 
 // const path = 'folder/subfolder/file.txt';
 // const result = path.split('/');  // Split by slash

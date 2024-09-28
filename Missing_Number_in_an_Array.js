@@ -1,5 +1,6 @@
 function findMissingNumber(arr) {
     const n = arr.length + 1; 
+    
     const expectedSum = n * (arr[0] + arr[arr.length-1]) / 2; 
 
     const actualSum = arr.reduce((sum, num) => 
