@@ -59,6 +59,8 @@ console.log(reversedStr); // Output: "IAnepO"
 //Q.4. Combine String and Array of Characters
 let str5 = "Code";
 let chars5 = ['r', 's'];
-let combined = [...str5, ...chars5].join('');
-console.log(combined); 
-// Output: "Coders"
+let combined = [...str5, ...chars5]
+let combined1 = [...str5, ...chars5].join('');
+console.log(combined); //Output: [ 'C', 'o', 'd', 'e', 'r', 's' ]
+console.log(combined1); // Output: "Coders"
+
