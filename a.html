@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Tesseract.js Project</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+    #image {
+      max-width: 100%;
+      margin-bottom: 20px;
+    }
+    #output {
+      border: 1px solid #000;
+      padding: 10px;
+      width: 100%;
+      max-width: 600px;
+      min-height: 50px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <h1>Tesseract.js OCR Example</h1>
+  
+  <input type="file" id="upload" accept="image/*" />
+  <br/>
+  <img id="image" alt="Selected Image" style="display:none;" />
+  
+  <p id="progress"></p>
+  
+  <div id="output">Extracted Text will appear here...</div>
+
+  <!-- Tesseract.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/tesseract.js@v2.1.4"></script>
+  <script>
+    const upload = document.getElementById('upload');
+    const image = document.getElementById('image');
+    const output = document.getElementById('output');
+    const progress = document.getElementById('progress');
+
+    upload.addEventListener('change', function(event) {
+      const file = event.target.files[0];
+      if (file) {
+        const imageURL = URL.createObjectURL(file);
+        image.src = imageURL;
+        image.style.display = 'block';
+
+        // Clear previous output and progress
+        output.textContent = "Extracting text...";
+        progress.textContent = "";
+
+        // Run OCR using Tesseract.js
+        Tesseract.recognize(
+          imageURL,
+          'eng',  // Language
+          {
+            logger: (m) => {
+              // Update progress
+              if (m.status === 'recognizing text') {
+                progress.textContent = `Progress: ${Math.round(m.progress * 100)}%`;
+              }
+            },
+          }
+        ).then(({ data: { text } }) => {
+          output.textContent = text; // Show extracted text
+        }).catch((err) => {
+          console.error(err);
+          output.textContent = "Error occurred while extracting text.";
+        });
+      }
+    });
+  </script>
+</body>
+</html>
