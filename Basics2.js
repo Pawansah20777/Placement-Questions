@@ -45,3 +45,15 @@ console.log(+str + num); // Output: 30
 let arr1 = [1, 2];
 let arr2 = [1, 2];
 console.log(arr1 == arr2); // Output: false
+
+console.log([] + []); // Output: ""
+console.log(true + false); // Output: 1
+console.log([] == false); // Output: true
+//1 < 2 evaluates to true.
+//Now, the expression becomes true < 3. In JavaScript, true is coerced to the number 1, so the expression becomes 1 < 3, which is true
+console.log(1 < 2 < 3); // Output: true
+
+//console.log(3 > 2 > 1);
+//Step 1: 3 > 2 evaluates to true.
+//Step 2: Now, the expression becomes true > 1. Again, true is coerced to the number 1, so the expression becomes 1 > 1, which is false.
+console.log(3 > 2 > 1); // Output: false
