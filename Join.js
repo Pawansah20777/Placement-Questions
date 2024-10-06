@@ -1,30 +1,40 @@
 //join(): Convert an array into a string with a specified separator
 //If you remove the separator from join(), it defaults to using a comma (,) as the separator.
 
-// const fruits = ['apple', 'banana', 'orange'];
-// const result = fruits.join(",");  
-// console.log(result); 
+// Example 1
+const fruits1 = ['apple', 'banana', 'orange'];
+const result1 = fruits1.join(",");  
+console.log(result1);  
+// Output: "apple,banana,orange"
 
 //=========================================================
 
-// const fruits = ['apple', 'banana', 'orange'];
-// const result = fruits.join();  
-// console.log(result); 
+// Example 2
+const fruits2 = ['apple', 'banana', 'orange'];
+const result2 = fruits2.join();  
+console.log(result2);  
+// Output: "apple,banana,orange"  (Default separator is a comma when no argument is provided)
 
 //=========================================================
 
-// const words = ['hello', 'world', 'javascript'];
-// const result = words.join("-");  
-// console.log(result);  
+// Example 3
+const words = ['hello', 'world', 'javascript'];
+const result3 = words.join("-");  
+console.log(result3);  
+// Output: "hello-world-javascript"
 
 //=========================================================
 
-// const numbers = [1, 2, 3, 4];
-// const result = numbers.join('');  // No separator
-// console.log(result);  
+// Example 4
+const numbers = [1, 2, 3, 4];
+const result4 = numbers.join('');  // No separator
+console.log(result4);  
+// Output: "1234"  (All elements joined with no separator)
 
 //=========================================================
 
-// const items = ['car', 'bike', 'boat'];
-// const result = items.join(' | ');  // Custom separator
-// console.log(result);  
+// Example 5
+const items = ['car', 'bike', 'boat'];
+const result5 = items.join(' | ');  // Custom separator
+console.log(result5);  
+// Output: "car | bike | boat"
