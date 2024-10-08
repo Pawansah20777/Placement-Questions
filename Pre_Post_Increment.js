@@ -130,3 +130,19 @@ console.log(r, s);  // Output: 3 8
 //     console.log(i);  // Output: 1, 2
 // }
 // console.log(i);  // Output: 3
+
+//==================================================
+
+// let a= 5;
+// let b=a++; //assigns b the value of a before a is incremented 
+//            //So, b becomes 5, and then a is incremented to 6.
+// let c=a+1;
+
+// console.log(a,b,c); //Output: 6 5 7
+
+//==================================================
+
+// let a=5;
+// let b=a;  // b is assigned the current value of a, which is 5
+// ++a;      // a is incremented by 1, so a becomes 6
+// console.log(a,b) //Output: 6 5

@@ -13,6 +13,10 @@ let num = 12345;
 let reversedNum = num.toString().split('').reverse().join('');
 console.log(reversedNum);  // Output: 54321
 
+//4. Reversing a Array:
+const x= [1,2,3]
+const y=x.reverse()
+console.log(x===y) //Output:true
 
 
 // Number: 121
