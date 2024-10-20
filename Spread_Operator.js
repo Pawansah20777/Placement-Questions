@@ -1,5 +1,5 @@
 let numbers = [2, 6, 1, 7, 9, 25, 2, 13];
-let maxNum = Math.max(...numbers); // Passes the elements as separate arguments
+let maxNum = Math.max(...numbers); // Passes the elements as separate arguments 
 console.log(maxNum); // Output: 25
 
 //Without ... Math.max(numbers) → Doesn't work because Math.max() expects individual numbers, not an array.
@@ -56,6 +56,11 @@ let str4 = "OpenAI";
 let reversedStr = [...str4].reverse().join('');
 console.log(reversedStr); // Output: "IAnepO"
 
+// //Q.4. Reverse a String
+// let str4 = "OpenAI";
+// let reversedStr = str4.split('').reverse().join('');
+// console.log(reversedStr); // Output: "IAnepO"
+
 //Q.4. Combine String and Array of Characters
 let str5 = "Code";
 let chars5 = ['r', 's'];
@@ -63,4 +68,10 @@ let combined = [...str5, ...chars5]
 let combined1 = [...str5, ...chars5].join('');
 console.log(combined); //Output: [ 'C', 'o', 'd', 'e', 'r', 's' ]
 console.log(combined1); // Output: "Coders"
+
+// const array1 = [1, 2];
+// const array2 = [3, 4];
+// const combinedArray = [...array1, ...array2];
+
+// console.log(combinedArray); // Output: [1, 2, 3, 4]
 

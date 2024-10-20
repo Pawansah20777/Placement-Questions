@@ -41,6 +41,10 @@ let w = +"10"; // 'w' is a number,
 console.log(z + 5); // Output: "105"
 console.log(w + 5); // Output: 15
 
+//Unary plus (+): Converts its operand into a number.
+let x1 = "5";
+console.log(+x1);  // Output: 5 (as a number)
+
 //Q.7 Increment/decrement confusion:
 let m = 10;
 let n = m++ + ++m;

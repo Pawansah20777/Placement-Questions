@@ -82,6 +82,9 @@ console.log(countersArray[2]()); // Output: 2
 // console.log(counter()); //output:2
 // console.log(counter()); //output:3
 
+
+//closures allow the inner function to retain access to variables like
+// a as part of its environment.
 // function abc() {
 //   let a = 5; // This variable is part of the closure
 //   return function () {
@@ -91,3 +94,13 @@ console.log(countersArray[2]()); // Output: 2
 
 // let closure = abc();
 // console.log(closure());
+
+
+//============================================
+// function example() {
+//   if (true) {
+//       var x = 10; // Function-scoped
+//   }
+//   console.log(x); // Output: 10
+// }
+// example();

@@ -18,6 +18,10 @@ const x= [1,2,3]
 const y=x.reverse()
 console.log(x===y) //Output:true
 
+let a=[1,2,3];
+let b=[1,2,3];
+console.log(a === b); // Output: true
+
 
 // Number: 121
 

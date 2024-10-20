@@ -18,7 +18,6 @@ console.log(q, r); // Output: 2 1
 // //Example of Arithmetic with True and False in Python:
 // q = True + True + False; // True is 1, False is 0
 // r = True + False + False;
-
 // print(q, r); // Output: 2 1
 
 //Q.2 Implicit type coercion:
@@ -31,10 +30,14 @@ console.log(x, y, z); // Output: '53', 2, 51
 console.log(null == undefined); // Output: true
 console.log(null === undefined); // Output: false
 console.log([] == 0); // Output: true
+console.log([] == null); // Output: false
+console.log([] == undefined); // Output: false
 
 //Q.4 Adding arrays and strings:
 let arr = [1, 2];
 console.log(arr + 1); // Output: '1,21'
+console.log(arr + [1]);// Output: "1,21"
+console.log([1] + [2]); // Output: "12"
 console.log([] + []); // Output: ''
 
 let str = "10";

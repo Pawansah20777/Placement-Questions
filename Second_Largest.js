@@ -2,7 +2,7 @@
 let a = [2, 6, 1, 7, 9, 25, 2, 13];
 
 // Step 1: Find the largest value
-let largest = Math.max(...a);
+let largest = Math.max(...a);  //Math.max(2, 6, 1, 7, 9, 25, 2, 13)
 
 // Step 2: Remove the largest value (assuming only one occurrence)
 a = a.filter(num => num !== largest);

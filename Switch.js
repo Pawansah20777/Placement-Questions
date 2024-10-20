@@ -40,3 +40,4 @@ function getmonthName(a){
 }
 
 console.log(getmonthName(1)); // January
+console.log(getmonthName("2")); // February

@@ -33,3 +33,10 @@ function abc() {
 
 let res = abc();
 console.log(res); // Output: "helo"
+
+//==============================================================
+const array1 = [1, 2];
+const array2 = [3, 4];
+const combinedArray = [...array1, ...array2];
+
+console.log(combinedArray); // Output: [1, 2, 3, 4]

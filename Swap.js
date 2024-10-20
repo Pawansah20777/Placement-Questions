@@ -28,6 +28,8 @@
 // console.log(i, j); //Output: 20 10
 
 //=============================================
+
+//bitwise operator (bitwise XOR).
 //same-same zero
 //different 1
 let a = 5;

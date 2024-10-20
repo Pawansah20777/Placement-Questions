@@ -1,3 +1,24 @@
+//Scope determines where a variable is accessible in your code. It can be global, function-scoped, or block-scoped.
+//Keywords and Their Behavior:
+
+//1.var:
+
+//Global Scope: If declared outside any function, it can be accessed anywhere in the program.
+//Function Scope: If declared inside a function, it is accessible throughout that function but not outside it.
+//Not Block Scoped: If declared inside a block (like an if statement or loop), it can still be accessed outside that block.
+
+//2.let and const:
+
+//Global Scope: If declared outside any function, they can be accessed globally.
+//Block Scope: If declared inside a block, they are only accessible within that block, not outside it.
+//Not Function Scoped: They do not behave as function-scoped variables like var.
+
+//Lexical Scope: This refers to how nested functions have access to variables declared in their parent scopes, allowing for closures.
+
+
+
+
+
 //var keyword is global scope and function scope but not block scope.
 //let and const is block scope
 
@@ -52,3 +73,50 @@
 // }
 
 // console.log(conditionVar); // Output: undefined, because `conditionVar` is hoisted and declared, but not assigned
+
+//==========================================
+for (var i = 0; i < 3; i++) {
+  setTimeout(() => console.log(i), 1000);
+}
+//Output: 3 3 3
+
+//==========================================
+for (let i = 0; i < 3; i++) {
+  setTimeout(() => console.log(i), 1000);
+}
+//Output: 0 1 2
+
+//======================================
+// if (true) {
+//   var x = "I'm inside the block!";
+// }
+
+// console.log(x);  // Output: "I'm inside the block!"
+
+//==============================================
+// for (var i = 0; i < 5; i++) {
+//   console.log(i);  // Outputs: 0, 1, 2, 3, 4
+// }
+
+// console.log(i);  // Output: 5 (accessible outside the loop)
+
+//===================================================
+function example() {
+  if (true) {
+      var x = 10; // Function-scoped
+  }
+  console.log(x); // Output: 10
+}
+example();
+
+//=======================================
+function exampleFunction() {
+  var x = 10;
+  if (true) {
+      var x = 20; // Same `x`, since `var` is function-scoped
+      console.log(x); // Output: 20
+  }
+  console.log(x); // Output: 20 (No block scope, `x` is overwritten)
+}
+
+exampleFunction();

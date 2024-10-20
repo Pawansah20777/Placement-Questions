@@ -1,5 +1,4 @@
-//The + operator, when used with strings, performs string concatenation,
-// not arithmetic addition.
+//The + operator, when used with strings, performs string concatenation, not arithmetic  addition.
 //The - operator,does not perform string concatenation but rather arithmetic subtraction.
 
 let a = "2";
@@ -41,3 +40,8 @@ let arr = [1, 2, 3];
 let m = arr;
 m.push(4); //m.append(4);
 console.log(m); // Output: [1,2,3,4]
+
+let arr1 = [1, 2, 3];
+let m1 = arr1;
+console.log(m1); //[ 1, 2, 3 ]
+console.log(arr1==m1) //true
