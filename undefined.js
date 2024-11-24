@@ -59,3 +59,25 @@ console.log(z); //output:5
 
 
 //=====================================================
+// console.log(x); // ReferenceError: Cannot access 'x' before initialization
+// let x = 5;
+
+// //behind the process
+// {
+//   let x; // Declaration only
+// }
+// console.log(x); // ReferenceError: Cannot access 'x' before initialization
+// x = 5; // Not reached due to the error
+
+//=====================================================
+//====================================================
+a = 6; // ReferenceError: Cannot access 'a' before initialization
+console.log(a);
+let a;
+
+//==========================================================
+
+{
+  let a = 6; // 'a' is scoped to this block
+}
+console.log(a); // ReferenceError: 'a' is not defined

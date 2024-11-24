@@ -1,10 +1,11 @@
 // evaluates powers from right to left.
 console.log(2**3**2);
 
-let a=5;
-let b=a;
-a=10;
-console.log(a,b) //Output:10 5
+let a = 5;  // a is assigned the value 5
+let b = a;  // b is assigned a *copy* of the value of a, which is 5
+a = 10;     // a is now updated to 10, but this doesn't affect b
+console.log(a, b); // Output: 10 5
+
 
 const obj={
   a:1,
@@ -64,3 +65,28 @@ console.log(obj1 === obj2); // Output: false
 
 // console.log(obj1 === obj2);  // Output: true
 
+//=====================================================
+//In JavaScript, when you compare two arrays (or objects) using the equality operator (==), it checks for reference equality rather than value equality.
+
+console.log([]==[]) //false
+
+//==================================================
+
+// let a=[];
+// let b=false;
+// console.log(a==b);//true
+
+//=====================================================
+// console.log([] == 0);  // true (empty array is coerced to 0)
+// console.log([] === 0); // false (strict equality does not perform type coercion)
+
+//=====================================================
+// let a=[10,20,30];
+// a[54]=2;
+// console.log(a.length); //55
+
+//====================================================
+// function sum(a=5,b=7){
+//   console.log(a+b)
+// }
+// sum(null,20) //output: 20
