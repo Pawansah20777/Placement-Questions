@@ -35,6 +35,7 @@ console.log(x == y); // Output: true
 console.log(x === y); // Output: false
 
 //Q.6 Unary plus operator:
+//A unary operator is an operator that works with only one operand.
 let z = "10";
 let w = +"10"; // 'w' is a number,
 //because the unary plus operator converts the string "10" to the number 10
@@ -47,7 +48,7 @@ console.log(+x1);  // Output: 5 (as a number)
 
 //Q.7 Increment/decrement confusion:
 let m = 10;
-let n = m++ + ++m;
+let n = m++ + ++m; //n = 10 + 12;
 console.log(n); // Output: 22
 
 //Q.8 Order of operations:
