@@ -1,5 +1,8 @@
+greet(); // "Hello!" - You can call it before or after its declaration
 
-//Q.7 Increment/decrement confusion:
-let m = 10;
-let n = m++ + ++m;
-console.log(n); 
+// Function Declaration
+function greet() {
+  console.log("Hello!");
+}
+
+greet(); // "Hello!" - You can call it before or after its declaration

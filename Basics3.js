@@ -42,6 +42,35 @@ var x; // Declaration is hoisted to the top
 console.log(x); // Output: undefined (because x is declared but not yet initialized)
 x = 5; // Initialization happens here
 
+
+//=================================================================
+// When you declare a variable using var, both the declaration and the initialization (with undefined) are hoisted to the top of its scope.
+//When you declare a variable using let, only the declaration is hoisted, but the initialization does not happen until the code execution reaches the let statement.
+
+//Q.1 Var
+// console.log(x); // undefined
+// var x = 5;
+
+// Memory:
+// +-----------+-----------+
+// | Variable  | Value     |
+// +-----------+-----------+
+// | x         | undefined |
+// +-----------+-----------+
+
+
+//Q.2 Let
+// console.log(x); // ReferenceError: Cannot access 'x' before initialization
+// let x = 5;
+
+// Memory (before initialization):
+// +-----------+---------+
+// | Variable  | Value   |
+// +-----------+---------+
+// | x         | TDZ     |
+// +-----------+---------+
+
+
 //===============================================================
 
 

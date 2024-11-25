@@ -30,6 +30,7 @@ console.log(x, y, z); // Output: '53', 2, 51
 console.log(null == undefined); // Output: true
 console.log(null === undefined); // Output: false
 console.log([] == 0); // Output: true
+console.log([] == false); // Output: true
 console.log([] == null); // Output: false
 console.log([] == undefined); // Output: false
 
@@ -45,13 +46,24 @@ let num = 20;
 console.log(str + num); // Output: '1020'
 console.log(+str + num); // Output: 30
 
+
+// In JavaScript:
+// Primitive types (e.g., number, string, boolean) are compared by value.
+// Non-primitive types (e.g., array, object, function) are compared by reference.
 let arr1 = [1, 2];
 let arr2 = [1, 2];
 console.log(arr1 == arr2); // Output: false
 
+// When the == operator is used:
+// JavaScript compares the references of arr1 and arr2,not the actual values inside the arrays.
+// Since arr1 and arr2 refer to different memory locations, the comparison evaluates to false.
+
+
+
 console.log([] + []); // Output: ""
 console.log(true + false); // Output: 1
 console.log([] == false); // Output: true
+
 //1 < 2 evaluates to true.
 //Now, the expression becomes true < 3. In JavaScript, true is coerced to the number 1, so the expression becomes 1 < 3, which is true
 console.log(1 < 2 < 3); // Output: true
