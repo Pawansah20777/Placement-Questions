@@ -55,3 +55,10 @@ console.log(a === b); // Output: true
 //However, if you want to reverse a string, you can't directly use reverse() on it, 
 //as strings are not arrays. To reverse a string, you would typically first convert it to an array of characters,
 // then use the reverse() method, and finally join the array back into a string:
+
+
+let skills = ["PHP", "JavaScript", "Node.js"];
+console.log(skills.toString()); // "PHP", "JavaScript", "Node.js"
+
+
+

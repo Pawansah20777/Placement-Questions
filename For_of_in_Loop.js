@@ -15,14 +15,22 @@ console.log(obj.age);             // Output: 30 // Accessing property using dot 
 console.log(obj[1]);              // Output: "pawan"
 console.log(obj["2"]);            // Output: "kumar"
 
+
+console.log(obj[1]);  // This will output: pawan
+console.log(obj[2]);  // This will output: kumar
+console.log(obj[3]);  // This will output: sah
+
+
+
 for (let i in obj) {
   console.log(i, obj[i]);
 }
-// Output:
-// name John
+// Output:                   
+// name John             
 // age 30
 // price 500
 
+// in JavaScript, when you access an object's property using a string or number, it automatically converts the number into a string.
 //===========================================
 
 let a = [1, 2, 3, 4, 5];

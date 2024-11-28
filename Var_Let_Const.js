@@ -120,3 +120,18 @@ function exampleFunction() {
 }
 
 exampleFunction();
+
+
+//==========================================
+// function example() {
+//   if (true) {
+//       var x = 10; // Function-scoped
+//   }
+//   console.log(x); // Output: 10
+// }
+console.log(x); // Output: ReferenceError: x is not defined
+
+// example();
+
+
+//Variables declared with var are function-scoped, so they cannot be accessed outside the function they are defined in.

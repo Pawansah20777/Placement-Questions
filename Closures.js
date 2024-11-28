@@ -97,10 +97,3 @@ console.log(countersArray[2]()); // Output: 2
 
 
 //============================================
-// function example() {
-//   if (true) {
-//       var x = 10; // Function-scoped
-//   }
-//   console.log(x); // Output: 10
-// }
-// example();

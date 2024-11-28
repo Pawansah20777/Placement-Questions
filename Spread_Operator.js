@@ -1,3 +1,7 @@
+//note:
+// In JavaScript, the spread operator (...) is used to unpack the elements of an array, object, or other iterable.
+
+
 let numbers = [2, 6, 1, 7, 9, 25, 2, 13];
 let maxNum = Math.max(...numbers); // Passes the elements as separate arguments 
 console.log(maxNum); // Output: 25
@@ -75,3 +79,29 @@ console.log(combined1); // Output: "Coders"
 
 // console.log(combinedArray); // Output: [1, 2, 3, 4]
 
+//=============================================================
+// let skills = []; // No skills selected  
+// let newSkills = [...skills, "Python"]; // Add "Python"  
+// New array: [...skills, "Python"] → [ ] + "Python" → ["Python"].
+
+// console.log(newSkills); // Output: ["Python"]  
+
+
+
+
+// let skills = ["JavaScript"]; // Initial skills  
+// let newSkills = [...skills, "Python", "Java"]; // Add "Python" and "Java"  
+// console.log(newSkills); // Output: ["JavaScript", "Python", "Java"]  
+
+
+
+// The spread operator (...) creates a new array by copying the elements from the original array (or object) into the new array. It does not modify the original array; instead, it creates a shallow copy.
+
+
+//====================================================
+// let arr = [1, 2, 3];
+// console.log(...arr);
+
+// In JavaScript, the spread operator (...) is used to unpack the elements of an array, object, or other iterable.
+
+// When you write console.log(...arr), the spread operator unpacks the elements of the arr array and passes them as individual arguments to the console.log() function. 

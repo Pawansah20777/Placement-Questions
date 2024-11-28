@@ -38,3 +38,8 @@ const items = ['car', 'bike', 'boat'];
 const result5 = items.join(' | ');  // Custom separator
 console.log(result5);  
 // Output: "car | bike | boat"
+
+
+//==============================================================
+// No separator: join('') – the elements are concatenated without any separator, like in numbers.join('') resulting in "1234".
+// Default separator: join() – if no separator is provided, it defaults to a comma ,, like in fruits2.join() resulting in "apple,banana,orange".
