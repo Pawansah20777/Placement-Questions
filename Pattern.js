@@ -44,3 +44,20 @@ for (let i = 1; i <= m; i++) {
 //   // Move to the next line after each row
 //   console.log("");
 // }
+
+
+//=============================================
+// let m= 5;
+
+// for(let i=1; i<=m; i++){
+
+// for(let j=0; j<m-i; j++){
+//   process.stdout.write(" ");
+// }
+
+// for(let k=0; k<i; k++){
+//   process.stdout.write("* ");
+// }
+
+//}
+// console.log("");

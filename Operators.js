@@ -35,6 +35,8 @@ console.log(m & n); // Output: 0
 
 // 5. Bitwise XOR (^)
 // The bitwise XOR compares each bit of p and q. It returns 1 if only one of the bits is 1 (but not both).
+//similar values=0 
+//different values= 1
 
 //   0101   (p = 5)
 // ^ 0011   (q = 3)
