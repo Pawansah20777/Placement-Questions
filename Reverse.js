@@ -20,7 +20,7 @@ console.log(x===y) //Output:true
 
 let a=[1,2,3];
 let b=[1,2,3];
-console.log(a === b); // Output: true
+console.log(a === b); // Output: false
 
 
 // Number: 121
@@ -58,7 +58,7 @@ console.log(a === b); // Output: true
 
 
 let skills = ["PHP", "JavaScript", "Node.js"];
-console.log(skills.toString()); // "PHP", "JavaScript", "Node.js"
+console.log(skills.toString()); // PHP, JavaScript, Node.js
 
 
 
