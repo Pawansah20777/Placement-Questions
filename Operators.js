@@ -71,6 +71,7 @@ console.log(p | q); // Output: 7
 console.log(p ^ q); // Output: 6
 
 //The bitwise NOT operator is a unary operator, meaning it only takes one operand.
+//The bitwise NOT operation essentially calculates -(x + 1) for any integer x. For p = 5:
 console.log(~p); // Output: -6
 console.log(p << 1); // Left Shift  // Output: 10
 console.log(p >> 1); // Right Shift  // Output: 2
