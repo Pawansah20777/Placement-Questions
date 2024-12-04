@@ -39,6 +39,7 @@ let arr = [1, 2];
 console.log(arr + 1); // Output: '1,21'
 console.log(arr + [1]);// Output: "1,21"
 console.log([1] + [2]); // Output: "12"
+console.log([1,2] + [2,3]); // Output: "1,22,3"
 console.log([] + []); // Output: ''
 
 let str = "10";

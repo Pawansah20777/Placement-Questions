@@ -20,7 +20,7 @@ console.log(obj.a) //Output:4
 function baby(){
   return "something";
 }
-console.log(baby.name)
+console.log(baby.name) //Output:baby
 
 
 //Q.2 For anonymous functions (e.g., functions assigned to a variable without a name),
