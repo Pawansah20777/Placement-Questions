@@ -20,7 +20,7 @@ console.log(result3);
 const str4 = 'apple,banana,orange';
 const result4 = str4.split(' '); 
 console.log(result4);  
-// Output: ["apple,banana,orange"]  (No spaces in the string to split by, so no split occurs)
+// Output: [ 'apple,banana,orange' ] (No spaces in the string to split by, so no split occurs)
 
 const sentence1 = 'Hello world JavaScript';
 const result5 = sentence1.split(' ');  // Split by space
