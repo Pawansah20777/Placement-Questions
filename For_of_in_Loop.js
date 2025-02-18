@@ -7,8 +7,8 @@ const obj = {
   3:"sah"
 };
 
-console.log(Object.keys(obj));    // Output: ['name', 'age', 'price']
-console.log(Object.values(obj));  // Output: ['John', 30, 500]
+console.log(Object.keys(obj));    // Output: [ '1', '2', '3', 'name', 'age', 'price' ]
+console.log(Object.values(obj));  // Output: [ 'pawan', 'kumar', 'sah', 'John', 30, 500 ]
 
 console.log(obj["name"]);         // Output: John
 console.log(obj.age);             // Output: 30 // Accessing property using dot notation
