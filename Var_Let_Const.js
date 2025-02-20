@@ -135,3 +135,25 @@ console.log(x); // Output: ReferenceError: x is not defined
 
 
 //Variables declared with var are function-scoped, so they cannot be accessed outside the function they are defined in.
+
+//=========================================================
+//Here’s a brief and clear explanation of const in JavaScript:
+
+// const x; // ❌ Error! You must assign a value.
+// const x = 5; // ✅ Correct.
+
+// const x = 10;
+// x = 20; // ❌ Error!
+
+// Primitive values (e.g., number, string, boolean):
+//  ->Cannot update or reassign.
+// const name = "John";
+// name = "Doe"; // ❌ Error!
+
+// Non-primitive values (e.g., objects, arrays):
+//   ->Can update properties or elements, but cannot reassign the variable itself.
+// const person = { name: "John" };
+// person.name = "Doe"; // ✅ Works!
+// person = { name: "Alice" }; // ❌ Error!
+
+

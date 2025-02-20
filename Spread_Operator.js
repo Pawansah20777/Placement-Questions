@@ -31,10 +31,10 @@ console.log(... arr); // Output: 1 2 3
 //You can use the spread operator to convert a string into an array of individual characters.
 let string = "JavaScript";
 let characters = [...string];
-console.log(string);
-console.log(...string)
-console.log(characters); 
-// Output: ['J', 'a', 'v', 'a', 'S', 'c', 'r', 'i', 'p', 't']
+console.log(string);      // Output: JavaScript
+console.log(...string)    // Output: J a v a S c r i p t
+console.log(characters);  // Output: ['J', 'a', 'v', 'a', 'S', 'c', 'r', 'i', 'p', 't']
+
 
 
 //Q.2. Merge Two Strings
