@@ -11,7 +11,7 @@ console.log(x + y); //Output: 23
 
 let c = "2";
 let d = "3";
-console.log(c - b); //Output: -1
+console.log(c - d); //Output: -1
 
 let c1 = 2;
 let d1 = "3";
