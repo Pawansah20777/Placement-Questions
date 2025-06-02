@@ -1,5 +1,5 @@
 function isNumberPalindrome(num) {
-    let str = num.toString(); // str = "121"
+    let str = num.toString(); // str = "12121"
 
     for (let i = 0; i < str.length / 2; i++) {
 
