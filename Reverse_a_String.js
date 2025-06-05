@@ -9,3 +9,11 @@ function reverseString(str) {
 let a = "pawan hello";
 let b = reverseString(a);
 console.log(b); 
+
+
+//================================
+function reverseString(str) {
+    return str.split('').reverse().join('');
+}
+
+console.log(reverseString("pawan hello")); // Output: "olleh nawap"
