@@ -39,5 +39,6 @@ function getmonthName(a){
   return month[a]
 }
 
-console.log(getmonthName(1)); // January
-console.log(getmonthName("2")); // February
+console.log(getmonthName(1));   
+console.log(month["1"]);       // prints January
+console.log(getmonthName(1)); // also prints January (JS converts 1 → "1")

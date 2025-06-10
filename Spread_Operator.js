@@ -23,7 +23,7 @@ let chars = [...str]; // Spreads the string into individual characters
 console.log(chars); // Output: ['H', 'e', 'l', 'l', 'o']
 
 let arr = [1, 2, 3];
-console.log(arr); // 
+console.log(arr); // [ 1, 2, 3 ]
 console.log(... arr); // Output: 1 2 3
 
 
@@ -31,12 +31,13 @@ console.log(... arr); // Output: 1 2 3
 //You can use the spread operator to convert a string into an array of individual characters.
 let string = "JavaScript";
 let characters = [...string];
-console.log(string);      // Output: JavaScript
-console.log(...string)    // Output: J a v a S c r i p t
 console.log(characters);  // Output: ['J', 'a', 'v', 'a', 'S', 'c', 'r', 'i', 'p', 't']
 
-
-
+console.log(...string)   //...string, it spreads the string into individual characters.
+                        //console.log('J', 'a', 'v', 'a', 'S', 'c', 'r', 'i', 'p', 't');
+                        // Output: J a v a S c r i p t
+    
+                        
 //Q.2. Merge Two Strings
 //The spread operator can be used to merge two or more strings into a new string.
 let str1 = "Hello";

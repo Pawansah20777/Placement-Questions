@@ -29,11 +29,11 @@
 
 //=============================================
 
-//bitwise operator (bitwise XOR).
+// Using bitwise XOR to swap values without a third variable (bitwise XOR).
 //same-same zero
 //different 1
-let a = 5;
-let b = 4;
+let a = 5;    // Binary: 101
+let b = 4;    // Binary: 100
 
 a = a ^ b; // Step 1: Store the XOR of a and b in a
 b = a ^ b; // Step 2: Get the original value of a
