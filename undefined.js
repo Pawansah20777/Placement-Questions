@@ -69,7 +69,7 @@ console.log(z); //output:5
 // console.log(x); // ReferenceError: Cannot access 'x' before initialization
 // x = 5; // Not reached due to the error
 
-//=====================================================
+
 //====================================================
 a = 6; // ReferenceError: Cannot access 'a' before initialization
 console.log(a);
